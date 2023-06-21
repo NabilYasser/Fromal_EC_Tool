@@ -1,0 +1,343 @@
+digraph {
+	"BDD Node ( Name a 
+, Low Child BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name c 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression c 
+) 
+, Expression AND (b, c) 
+) 
+ , High Child BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression OR (b, AND (b, c)) 
+) 
+, Expression OR (AND (a, b), AND (b, c)) 
+)" [label=a shape=circle]
+	"BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name c 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression c 
+) 
+, Expression AND (b, c) 
+)" [label=b shape=circle]
+	"BDD Node ( Name a 
+, Low Child BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name c 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression c 
+) 
+, Expression AND (b, c) 
+) 
+ , High Child BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression OR (b, AND (b, c)) 
+) 
+, Expression OR (AND (a, b), AND (b, c)) 
+)" -> "BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name c 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression c 
+) 
+, Expression AND (b, c) 
+)" [label=0 style=dashed]
+	"BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+)" [label=0 shape=square]
+	"BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name c 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression c 
+) 
+, Expression AND (b, c) 
+)" -> "BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+)" [label=0 style=dashed]
+	"BDD Node ( Name c 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression c 
+)" [label=c shape=circle]
+	"BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name c 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression c 
+) 
+, Expression AND (b, c) 
+)" -> "BDD Node ( Name c 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression c 
+)" [label=1]
+	"BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+)" [label=0 shape=square]
+	"BDD Node ( Name c 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression c 
+)" -> "BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+)" [label=0 style=dashed]
+	"BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+)" [label=1 shape=square]
+	"BDD Node ( Name c 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression c 
+)" -> "BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+)" [label=1]
+	"BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression OR (b, AND (b, c)) 
+)" [label=b shape=circle]
+	"BDD Node ( Name a 
+, Low Child BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name c 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression c 
+) 
+, Expression AND (b, c) 
+) 
+ , High Child BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression OR (b, AND (b, c)) 
+) 
+, Expression OR (AND (a, b), AND (b, c)) 
+)" -> "BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression OR (b, AND (b, c)) 
+)" [label=1]
+	"BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+)" [label=0 shape=square]
+	"BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression OR (b, AND (b, c)) 
+)" -> "BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+)" [label=0 style=dashed]
+	"BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+)" [label=1 shape=square]
+	"BDD Node ( Name b 
+, Low Child BDD Node ( Name 0 
+, Low Child None 
+ , High Child None 
+, Expression 0 
+) 
+ , High Child BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+) 
+, Expression OR (b, AND (b, c)) 
+)" -> "BDD Node ( Name 1 
+, Low Child None 
+ , High Child None 
+, Expression 1 
+)" [label=1]
+}
